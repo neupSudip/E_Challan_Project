@@ -1,3 +1,5 @@
+
+// for sliding signup and login page 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login-form");
     const signupForm = document.querySelector("#signup-form");
@@ -18,3 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
     });
 });
+

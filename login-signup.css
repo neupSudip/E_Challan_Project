@@ -1,25 +1,42 @@
 
 *{ margin: 0;}
 
+/* for headings and nevigation bars */
 .header{
-    background-color: rgb(53, 42, 25);
-    padding: 20px 10px ;
+    background-image: url(traffic.jpg);
+    padding: 10px 5px ;
 }
 .heading{
     display: inline; 
 }
+.heading a span{
+    color: rgb(0, 0, 255);
+}
+.logo{
+    margin-left: 42px;
+    width: 60px;
+    border-radius: 50%; 
+}
+.header img{
+    box-shadow: #009579;
+}
+.logo:hover{
+    width: 65px; 
+    margin-left: 35px;
+}
 .heading a{
     color: rgb(255, 255, 255);
+    font-size: 30px;
 }
 .header nav{
     display: inline; 
     float: right;
-    margin-top: 15px;
+    margin-top: -10px;
 }
 .navigation-ul li{
     display: inline; 
     padding:8px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .navigation-ul a{
     color: rgb(255, 255, 255);
@@ -27,8 +44,23 @@
 a{
     text-decoration: none;
 }
+.heading a:hover, .navigation-ul a:hover{
+    font-weight:bolder;
+    background-color: #ece6e6;
+    color: rgb(51, 138, 59); 
+    padding: 5px;
+    border-radius: 4px;
+}
+@media screen and (max-width: 720px){
+    .logo{margin-left: 35px; width: 50px; }
+    .logo:hover{width: 55px; margin-left: 30px;}
+    .heading a{color: rgb(255, 255, 255); font-size: 25px; }
+}
 
-main {
+
+/* for content of our login 
+and signup page */
+.login-signup-main {
     margin: 0;
     height: 90vh;
     display: flex;
@@ -37,8 +69,6 @@ main {
     font-size: 18px;
     background-size: cover; 
 }
-
-
 .container {
     text-align: center;
     width: 350px;
@@ -49,11 +79,9 @@ main {
     border-radius: 4px;
     background: #ffffff;
 }
-
 .form-title{
     margin-bottom: 20px;
 }
-
 .form-input {
     display: inline;
     width: 100%;
@@ -65,12 +93,10 @@ main {
     background: #ebebeb;
     transition: background 0.5s, border-color 0.5s;
 }
-
 .form-input:focus {
     border-color: #009579;
     background: #ffffff;
 }
-
 .form-button {
     width: 100%;
     background: rgb(15, 3, 3);
@@ -82,25 +108,80 @@ main {
     font-weight: bold;
     margin: 20px 0px;  
 }
-
 .form-button:hover{
     background-color: rgb(255, 255, 255);
     color: black;
 }
-
 .form-links a{
     display: inline-block;
     padding: 4px;
     color: rgb(35, 114, 75);
 }
-
 .form-links a:hover{
     text-decoration: underline;
 }
-
 .hidden-form{
     display: none;
 }
+
+
+/* for back to top image icon */
+#top-image{ 
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    cursor: pointer;
+}
+#top-image:hover{
+    background-color: salmon;
+}
+
+/* for content of our 
+echallan traffic laws */
+.traffic-laws{
+    display: flex;   
+}
+.law-navigation, .laws{
+    background-color: #e5ebea;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #e5ebea;
+    padding: 10px 20px 20px 10px;
+    margin-right: 5px;
+}
+.law-navigation a{
+    display:list-item;
+    padding: 30px 0px 0px 10px;
+    color:rgb(128, 33, 33);
+}
+.law-navigation a:hover{
+    color: blue;
+}
+.law-navigation:first-child{
+    padding-top: 60px;
+}
+.law h3{
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+.law p{
+    padding: 4px 0px;
+}
+.law p:last-child{
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 720px){
+    .traffic-laws{display: flex;}
+    .law-navigation{flex: 25%;}
+    .laws{flex: 75%;}
+}
+
+
+
 
 
 

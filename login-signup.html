@@ -9,32 +9,37 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="heading"><a href="">E - challan</a></h1>       
+    <!-- navigation bar or menu bar starts from here  -->
+    <div class="header">  
+        <a href="echallan.html"><img class="logo" src="e-challan.png" alt=""> </a><br>
+        <h1 class="heading"><a href="echallan.html"><span>E -</span> Challan</a></h1>
+           
         <nav class="navigation">
             <ul class='navigation-ul'>
                 
-                <li><a href=''>Create Challan</a></li>
-                <li><a href=''>Voilation laws</a></li>
+                <li><a href='createChallan.html'>Create Challan</a></li>
+                <li><a href='TrafficLaws.html'>Voilation laws</a></li>
                 <li><a href="login-signup.html">login</a></li>
                 
             </ul>
         </nav>
     </div>
-    
-    <main>
-    
-    
-    <div class="container">
+    <!-- navigation bar or meny bar ends here -->
     
 
+    <!-- content of page start from here -->
+    <main class="login-signup-main">
+    <div class="container">
+
+        <!-- login form starts from here  -->
         <form class="form" id="login-form">
             <h1 class="form-title">Login</h1>
             <div class="form-message form-error-message"></div>
 
+            <!-- input fields for login -->
             <div class="form-fields">
-                <input type="text" class="form-input" autofocus placeholder="Enter your email">
-                <input type="password" class="form-input" autofocus placeholder="Password">
+                <input type="email" class="form-input" autofocus placeholder="Enter your email" required>
+                <input type="password" class="form-input" autofocus placeholder="Password" required>
             </div>
 
             <button class="form-button" type="submit">Continue</button>
@@ -43,20 +48,22 @@
                 <a href="">Forgot your password?</a> 
                 <br>
                 <span>Don't have an account? <a href="" id="link-signup-form">Create account</a> </span>
-
             </div>
         </form>
+        <!-- login form ends here  -->
     
 
+        <!-- signup form starts from here  -->
         <form class="form hidden-form" id="signup-form">
             <h1 class="form-title">Create Account</h1>
             <div class="form-message form-error-message"></div>
 
+            <!-- input fields for signup  -->
             <div class="form-fields">
-                <input type="text" class="form-input" id="signup-username" autofocus placeholder="Type a Username">
-                <input type="text" class="form-input" autofocus placeholder="Email Address">
-                <input type="password" class="form-input" autofocus placeholder="Password">
-                <input type="password" class="form-input" autofocus placeholder="Confirm password">
+                <input type="text" class="form-input" id="signup-username" autofocus placeholder="Type a Username" required>
+                <input type="email" class="form-input" autofocus placeholder="Email Address" required>
+                <input type="password" class="form-input" autofocus placeholder="Password" required>
+                <input type="password" class="form-input" autofocus placeholder="Confirm password" required>
             </div>
 
             <button class="form-button" type="submit">Continue</button>
@@ -64,10 +71,17 @@
                 <span>Already ahve account? <a href="" id="link-signup-form">Sign in</a> </span>
             </div>
         </form>
-
+        <!-- signup form ends here -->
     </div>
-</main>
+    </main>
 
     <script src="login-signup.js"></script>
 </body>
+
+
+
+<footer>
+
+</footer>
+
 </html>
