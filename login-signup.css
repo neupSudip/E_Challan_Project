@@ -145,7 +145,6 @@ echallan traffic laws */
     display: flex;   
 }
 .law-navigation, .laws{
-    background-color: #e5ebea;
     width: -moz-fit-content;
     width: fit-content;
     background-color: #e5ebea;
@@ -172,6 +171,20 @@ echallan traffic laws */
 }
 .law p:last-child{
     padding-bottom: 20px;
+}
+.official-site{
+    text-align: center;
+    margin: 30px 50px 30px 0px;
+    font-weight: bold;
+}
+.official-site a{
+    font-size: 20px;
+    font-style: italic;
+    color:rgb(187, 53, 75);
+}
+.official-site a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 720px){
