@@ -3,7 +3,7 @@
 
 /* for headings and nevigation bars */
 .header{
-    background-image: url(traffic.jpg);
+    background-image: url(../photo/traffic.jpg);
     padding: 10px 5px ;
 }
 .heading{
@@ -144,12 +144,16 @@ echallan traffic laws */
 .traffic-laws{
     display: flex;   
 }
-.law-navigation, .laws{
+.law-navigation{
     width: -moz-fit-content;
     width: fit-content;
     background-color: #e5ebea;
     padding: 10px 20px 20px 10px;
-    margin-right: 5px;
+    margin: 5px 5px 0px 0px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+    margin-bottom: -20px;
 }
 .law-navigation a{
     display:list-item;
@@ -163,11 +167,13 @@ echallan traffic laws */
     padding-top: 60px;
 }
 .law h3{
-    padding: 10px 0px;
+    padding: 10px 0px 10px 10px;
     margin-top: 40px;
+    background: #ffffff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 }
 .law p{
-    padding: 4px 0px;
+    padding: 4px 0px 4px 20px;
 }
 .law p:last-child{
     padding-bottom: 20px;
@@ -191,6 +197,55 @@ echallan traffic laws */
     .traffic-laws{display: flex;}
     .law-navigation{flex: 25%;}
     .laws{flex: 75%;}
+}
+
+
+
+/* style for footer */
+
+footer{
+    margin-top: 30px; 
+    padding: 20px 0px 50px 0px; 
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-image: linear-gradient(to right, #8c939a, #8a989d, #8a9c9c, #8ea099, #97a395);}
+.footer-div{
+    width: 31%; 
+    display: inline-block; 
+    box-sizing: content-box;
+}
+.echallan-logo-footer{
+    border-radius: 100%; 
+    box-shadow: 2px rgb(0, 0, 0);
+}
+footer p {
+    color: #ffffff;
+    font-size: 20px; 
+    margin-bottom: 5px; 
+    font-weight: bold;}
+.footer-div a {
+    font-size: 16px; 
+    color:rgb(226, 212, 214);   
+}
+.footer-div a:hover{
+    background: rgb(82, 72, 72);
+    padding: 4px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+hr{
+    border: 2px dashed rgb(168, 153, 255); 
+    width: 75%; margin: auto; 
+    margin-top: 1%; 
+    margin-bottom: 1%;
+}
+.footer-heading a{
+    font-size: 20px;
+    color: #ffffff;
+}
+.copyright{
+    color: #ffffff;
+    margin-top: 20px;
 }
 
 
