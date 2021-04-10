@@ -205,7 +205,7 @@ echallan traffic laws */
 
 footer{
     margin-top: 30px; 
-    padding: 20px 0px 50px 0px; 
+    padding: 20px 0px 30px 0px; 
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-image: linear-gradient(to right, #8c939a, #8a989d, #8a9c9c, #8ea099, #97a395);}
@@ -240,6 +240,7 @@ hr{
     margin-bottom: 1%;
 }
 .footer-heading a{
+    
     font-size: 20px;
     color: #ffffff;
 }
@@ -247,6 +248,46 @@ hr{
     color: #ffffff;
     margin-top: 20px;
 }
+
+/* challan form */
+
+.challan-form{
+    max-width: 450px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: #ffffff;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 0px; 
+}
+
+.challan-title{
+    font-size: 30px;
+}
+
+.challan-field{
+    display: flex;
+    margin: 15px 0px;
+    padding: 0px 10px;
+}
+
+.challan-field p{
+    flex: 20%;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.challan-input{
+    width: 65%;
+    padding-right: 20px;
+}
+
+.challan-button{
+    width: 80%;
+   margin-bottom: -20px;
+   padding: 14px 0px;
+}
+
 
 
 
