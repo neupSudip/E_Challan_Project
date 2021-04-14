@@ -9,9 +9,6 @@
 .heading{
     display: inline; 
 }
-.heading a span{
-    color: rgb(0, 0, 255);
-}
 .logo{
     margin-left: 42px;
     width: 60px;
@@ -21,8 +18,8 @@
     box-shadow: #009579;
 }
 .logo:hover{
-    width: 65px; 
-    margin-left: 35px;
+    width: 62px; 
+    margin-left: 36px;
 }
 .heading a{
     color: rgb(255, 255, 255);
@@ -45,10 +42,9 @@ a{
     text-decoration: none;
 }
 .heading a:hover, .navigation-ul a:hover{
-    font-weight:bolder;
     background-color: #ece6e6;
     color: rgb(51, 138, 59); 
-    padding: 5px;
+    padding: 2px;
     border-radius: 4px;
 }
 @media screen and (max-width: 720px){
@@ -60,25 +56,23 @@ a{
 
 /* for content of our login 
 and signup page */
+
 .login-signup-main {
-    margin: 0;
-    height: 90vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    background-size: cover; 
+    background: url(../photo/traffic-sign.jpg);  
 }
-.container {
-    text-align: center;
+
+.container { 
+    margin: 100px auto;
     width: 350px;
     max-width: 350px;
-    margin: 1rem;
-    padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: #ffffff;
+    padding: 15px;
+    text-align: center;
 }
+
 .form-title{
     margin-bottom: 20px;
 }
@@ -204,7 +198,6 @@ echallan traffic laws */
 /* style for footer */
 
 footer{
-    margin-top: 30px; 
     padding: 20px 0px 30px 0px; 
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -249,16 +242,22 @@ hr{
     margin-top: 20px;
 }
 
-/* challan form */
+/* traffic challan form */
+
+.traffic-challan-form{
+    display: flex;
+    background: url(../photo/traffic-sign.jpg);
+}
 
 .challan-form{
-    max-width: 450px;
+    margin: 100px auto;
+    width: 400px;
+    max-width: 400px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: #ffffff;
+    padding: 15px;
     text-align: center;
-    margin: 30px auto;
-    padding: 20px 0px; 
 }
 
 .challan-title{
