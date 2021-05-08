@@ -19,6 +19,18 @@
     <!-- login form starts from here  -->
     <form class="form" id="login-form" action="login.php" method="post">
         <h1 class="form-title">Login</h1>
+
+        <?php
+            if (isset($_GET['error'])){
+                if($_GET['error'] == "noUser"){
+                    echo '<p style="color:red;">Sorry email not found</p>';
+                }
+                else if($_GET['error'] == "wrongpassword"){
+                    echo '<p style="color:red;">Password doen not match</p>';
+                }
+            }
+
+        ?>      
         <!-- input fields for login -->
         <div class="form-fields">
             <input type="email" class="form-input" name="email" autofocus placeholder="Enter your email" required>

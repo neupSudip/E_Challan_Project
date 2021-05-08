@@ -20,7 +20,22 @@
     <form class="form" id="signup-form" action="signup.php" method="post">
         <h1 class="form-title">Create Account</h1>
         
-        <div class="form-message form-error-message"></div>
+        <?php
+            if (isset($_GET['error'])){
+                if($_GET['error'] == "UserExist"){
+                    echo '<p style="color:red;">Provided Email already exist</p>';
+                }
+                else if($_GET['error'] == "invalidusername"){
+                    echo '<p style="color:red;">Please enter valid user name.</p>';
+                }
+                else if($_GET['error'] == "passwordNOtMatch"){
+                    echo '<p style="color:red;">Password does not match</p>';
+                }      
+                
+            }
+        ?>
+
+
         <!-- input fields for signup  -->
         <div class="form-fields">
             <input type="text" class="form-input" name="uname" autofocus placeholder="Type a Username" required>
