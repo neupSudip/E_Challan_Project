@@ -26,7 +26,7 @@
                     echo '<p style="color:red;">Sorry email not found</p>';
                 }
                 else if($_GET['error'] == "wrongpassword"){
-                    echo '<p style="color:red;">Password doen not match</p>';
+                    echo '<p style="color:red;">Password does not match</p>';
                 }
             }
 

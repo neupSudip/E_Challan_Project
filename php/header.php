@@ -27,7 +27,14 @@
                 if(isset($_SESSION['userId'])){
                     echo '<li><a href="../php/createChallan.php">Create Challan</a></li>
                     <li> <form class="logout" action="logout.php" method="post"><button class="logout" type="submit">Logout</button></form></li>';
-                }else{
+                }
+                else if(isset($_SESSION['admin'])){
+                    echo '<li><a href="../php/viewChallan.php">View Challan</a></li>
+                    <li><a href="../php/createChallan.php">Create Challan</a></li>
+                    <li> <form class="logout" action="logout.php" method="post"><button class="logout" type="submit">Logout</button></form></li>';
+                }
+                
+                else{
                     echo '<li><a href="../php/signup-page.php">Signup</a></li>
                     <li><a href="../php/login-page.php">login</a></li>';
                 }

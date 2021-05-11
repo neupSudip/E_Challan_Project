@@ -9,7 +9,13 @@ if(isset($_POST['login-submit'])){
     if(empty($user) || empty($pass)){
         header("Location: ../php/login-page.php?error=emptyField");
         exit();
+    }else if(strtolower($user) == "echallanadmin@gmail.com" && $pass == "admin12345"){
+        session_start();
+        $_SESSION['admin'] = "admin";
+        header("Location: ../php/index.php?login=success");
+        exit();  
     }
+    
     else{
 
         $sql = "SELECT * FROM users WHERE uemail=?;";
@@ -17,7 +23,8 @@ if(isset($_POST['login-submit'])){
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../php/login-page.php?error=sqlerror");
             exit();
-        } else {
+        }       
+        else {
 
             mysqli_stmt_bind_param($stmt, "s", $user);
             mysqli_stmt_execute($stmt);
