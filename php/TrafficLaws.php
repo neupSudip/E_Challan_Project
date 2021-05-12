@@ -9,7 +9,7 @@
 </head>
 <body>
     
-
+<!-- inserting header from header file -->
 <?php 
     require "header.php";
 ?>
@@ -20,12 +20,15 @@
 <img onclick="topFunction()"  id="top-image" src="../photo/top.png" alt="" width="40px">
 <!-- traffic laws -->
 <div class="traffic-laws">
+
+    <!-- cross navigation for laws -->
     <div class="law-navigation">
         <a href="#200-1000">A) Offenses punishable by a fine of Rs.200 to Rs.1000</a>
         <a href="#500-1500">B) Offenses punishable by a fine of Rs.500 to Rs.1500</a>
         <a href="#1000">C) Offenses punishable by a fine of Rs.1000</a>
         <a href="#1000-1500">D) Offenses punishable by a fine of Rs.1000 to Rs.1500</a>
     </div>
+
     <div class="laws">
         <div class="law">
             <h3 id="200-1000">A) Offenses punishable by a fine of Rs.200 to Rs.1000:</h3> 
@@ -40,6 +43,7 @@
             <p>9. Keeping the vehicle in such a way as to endanger other vehicles</p>
             <p>10. Carring passenger more than number of seats registered in certificate</p>    
         </div>
+
         <div class="law">
             <h3 id="500-1500">B) Offenses punishable by a fine of Rs.500 to Rs.1500:</h3> 
             <p>1. Driving with carelessness</p>
@@ -53,6 +57,7 @@
             <p>9. Driving on the wrong side of the road or opposite in one directional road</p>
             <p>10. Driving of overweight vehicle in the area of ​​determining the weight limit of the vehicle</p>
         </div>
+
         <div class="law">
             <h3 id="1000">C) Offenses punishable by a fine of Rs.1000:</h3>
             <p>1. Driving without a driver's license</p>
@@ -62,6 +67,7 @@
             <p>5. Allowing a person to drive who have no driving license</p>
             <p>6. Keeping/operating vehicles in a public place in an obstruction manner</p>
         </div>
+
         <div class="law">
             <h3 id="1000-1500">D) Offenses punishable by a fine of Rs.1000 to Rs.1500:</h3>
             <p>1. Driving without vehicle registration</p>
@@ -74,22 +80,16 @@
     
 </div>
 <p class="official-site">You can find the traffic voilation laws and charges on Nepal Traffic Police official page 
-<a href="https://traffic.nepalpolice.gov.np/index.php/notice/violation-and-fine">at here</a>. </p>
+<a target="_blank" href="https://traffic.nepalpolice.gov.np/index.php/notice/violation-and-fine" target="_blank">at here</a>. </p>
 
 
 
-
-
-
-
-
-
-
+<!-- inserting footer from footer.php file -->
 <?php 
     require "footer.php";
 ?>
 
-    
+<script src="../js/topBotton.js"></script>
 </body>
 </html>
 

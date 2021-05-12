@@ -9,76 +9,15 @@
 </head>
 <body>
     
-
+<!-- inserting header from header file -->
 <?php 
     require "header.php";
 ?>
 
 
-<div class="news">
-    <div class="new">
-        <p>
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-
-        </p>
-    </div>
-
-    <div class="new">
-        <p>
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            
-        </p>
-    </div>
 
 
-    <div class="new">
-        <p>
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-            Please Strictly foillow rule. Please Strictly foillow rule. 
-                 
-        </p>
-    </div>
-
-
-    <div class="new">
-        <p>
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-            This is traffic challan page.  This is traffic challan page.
-                       
-        </p>
-    </div>
-
-
-
-</div>
-
-
-
-
-
-
+<!-- inserting footer from footer.php file -->
 <?php 
     require "footer.php";
 ?>

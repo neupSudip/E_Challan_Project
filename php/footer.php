@@ -7,16 +7,18 @@
                 </picture>
                 <p class="footer-heading"><a href="../php/index.php">E - Challan</a></p>
             </div>
+
             <div>
                 <p>Follow Us</p>  
                 <a class="" href="../php/login-page.php" >Log In</a>  
-                <a class="" href="https://www.facebook.com/ktmtraffic">Facebook</a>   
-                <a class="" href="https://traffic.nepalpolice.gov.np/">Website</a> 
+                <a target="_blank" class="" href="https://www.facebook.com/ktmtraffic">Facebook</a>   
+                <a target="_blank" class="" href="https://traffic.nepalpolice.gov.np/">Website</a> 
             </div>
+
             <div >
                 <p>Our Services</p> 
-                <a class="" href="https://traffic.nepalpolice.gov.np/index.php/services/lost-and-found-vehicles">Lost and Found Vehicles</a>  
-                <a class="" href="">Contact Us</a>  
+                <a target="_blank" class="" href="https://traffic.nepalpolice.gov.np/index.php/services/lost-and-found-vehicles">Lost and Found Vehicles</a>  
+                <a class="" href="">About Project</a>  
                 <a class="" href="">Help</a>
             </div>
         </div>

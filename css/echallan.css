@@ -111,7 +111,6 @@ a{
 
 /* for content of our login 
 and signup page */
-
 .container { 
     display: flex;
     justify-content: center;
@@ -260,7 +259,6 @@ echallan traffic laws */
 
 
 /* style for footer */
-
 footer{
     padding: 20px 10px; 
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
@@ -314,8 +312,8 @@ hr{
     margin-top: 20px;
 }
 
-/* traffic challan form */
 
+/* traffic challan form */
 .traffic-challan-form{
     width: 100%;
     display: flex;
@@ -362,18 +360,6 @@ hr{
 
 
 /* home page content */
-.news{
-    margin: 20px 0;
-}
-
-.new{
-    width: 90%;
-    font-size: 20px;
-    margin: 10px auto;
-    padding:5px 0px 5px 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 
 
 

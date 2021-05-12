@@ -9,14 +9,14 @@
 </head>
 <body>
     
-
+<!-- inserting header from header file -->
 <?php 
     require "header.php";
 ?>
 
 
 <div class="container">
-    <!-- signup form starts from here  -->
+    <!-- signup form starts from here action on signup.php -->
     <form class="form" id="signup-form" action="signup.php" method="post">
         <h1 class="form-title">Create Account</h1>
         
@@ -35,7 +35,6 @@
             }
         ?>
 
-
         <!-- input fields for signup  -->
         <div class="form-fields">
             <input type="text" class="form-input" name="uname" autofocus placeholder="Type a Username" required>
@@ -52,6 +51,7 @@
 </div>
 
 
+<!-- inserting footer from footer.php file -->
 <?php 
     require "footer.php";
 ?>

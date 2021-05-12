@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    
+<!-- inserting header from header file -->
 <?php 
     require "header.php";
 ?>
@@ -19,7 +19,7 @@
 
 
 
-
+<!-- inserting footer from footer.php file -->
 <?php 
     require "footer.php";
 ?>
