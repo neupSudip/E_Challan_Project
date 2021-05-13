@@ -13,7 +13,57 @@
     require "header.php";
 ?>
 
+<div class="challan-div">
+    <h1>List of Created Challans</h1>
+    <table>
+        <tr class="table-title">
+            <th>Rider Name</th>
+            <th>Vehicle No.</th>
+            <th>Created By</th>
+            <th>Law</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
 
+        <?php
+            include 'database.php';
+
+            $sql = "SELECT * from challan";
+            $stmt = mysqli_query($conn, $sql);
+            
+            while($result = mysqli_fetch_array($stmt)){
+
+        ?>
+
+        <tr class="challan-list">
+            <th><?php echo $result['rider'] ?></th>
+            <th><?php echo $result['vehicle_num'] ?></th>
+            <th><?php echo $result['creater'] ?></th>
+            <th><?php echo $result['law'] ?></th>
+            <th>
+                <button type="submit" class="up-btn">
+                    <a href="../php/update.php?id=<?php echo $result['id'] ?>" class="up">
+                        Update
+                    </a>
+                </button>
+            </th>
+            <th>
+                <button type="submit" class="del-btn">
+                    <a href="../php/delete.php?id=<?php echo $result['id'] ?>" class="del">
+                        Delete
+                    </a>
+                </button>
+            </th>
+        </tr>
+
+        <?php
+            }
+        ?>
+       
+    </table>
+
+
+</div>
 
 
 

@@ -22,5 +22,5 @@ if(isset($_POST['challan-submit'])) {
     $stmt->bind_param("ssiisssi", $rider, $location, $license, $vehicle, $type, $creater, $law, $fine);
     $stmt->execute();
     $stmt->close();
-    header("Location: ../php/index.php");
+    header("Location: ../php/createChallan.php");
 }
