@@ -15,7 +15,7 @@
 ?>
 
 
-<div class="container">
+<div class="container1">
     <!-- signup form starts from here action on signup.php -->
     <form class="form" id="signup-form" action="signup.php" method="post">
         <h1 class="form-title">Create Account</h1>
