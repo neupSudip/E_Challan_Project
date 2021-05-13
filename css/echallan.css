@@ -111,7 +111,7 @@ a{
 
 /* for content of our login 
 and signup page */
-.container { 
+.container1 { 
     display: flex;
     justify-content: center;
     align-items: center;
