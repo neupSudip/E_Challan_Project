@@ -19,7 +19,7 @@
                 <p>Our Services</p> 
                 <a target="_blank" class="" href="https://traffic.nepalpolice.gov.np/index.php/services/lost-and-found-vehicles">Lost and Found Vehicles</a>  
                 <a class="" href="../php/AboutProject.php">About Project</a>  
-                <a class="" href="">Help</a>
+              
             </div>
         </div>
                     
