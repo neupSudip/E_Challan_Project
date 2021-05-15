@@ -25,7 +25,7 @@
         <nav class="navigation">
             <ul class='navigation-ul'>
                 
-                <li><a href="../php/TrafficLaws.php">Voilation laws</a></li>
+                <li><a href="../php/TrafficLaws.php">Traffic laws</a></li>
 
                 
                 <?php

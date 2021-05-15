@@ -1,19 +1,12 @@
 
 *{ 
     margin: 0;
-}
-
-/* for headings and nevigation bars */
-
-
-li{
+    font-family: serif;
     list-style: none;
-}
-
-a{
     text-decoration: none;
 }
 
+/* for headings and nevigation bars */
 .header{
     background-image: linear-gradient(to right, #7066af, #7158cc, #3c3c9c, #422ea3, #6343d6);
     box-shadow: 0 0 20px rgb(4, 0, 255);
@@ -55,17 +48,15 @@ a{
 }
 
 .logout{
-    font-family:sans-serif;
    cursor: pointer;
    border: none;
-   font-size: 16px;
+   font-size: 18px;
    font-weight: 600;
    background-color: #009579; 
    color: rgb(255, 255, 255);
    padding:3px;
    border-radius: 4px; 
    margin-top: -4px;
-
 }
 
 .heading:hover, .navigation-ul a:hover, .logout:hover{
@@ -73,7 +64,7 @@ a{
     color: rgb(255, 255, 255); 
     border-radius: 4px;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 715px){
     .header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -107,6 +98,7 @@ a{
     }
 
 }
+
 
 
 /* for content of our login 
@@ -280,11 +272,12 @@ footer p {
     color: #ffffff;
     font-size: 20px; 
     margin-bottom: 5px; 
-    font-weight: bold;}
+    font-weight: bold;
+}
 .footer-div a {
     display:list-item;
     list-style: none;
-    margin: 5px;
+    margin: 5px 0px;
     font-weight: bold;
     padding:-5px 5px;
     font-size: 16px; 
@@ -311,6 +304,15 @@ hr{
     color: #ffffff;
     margin-top: 20px;
 }
+@media screen and (max-width: 720px){
+    footer p {
+        font-size: 18px; 
+    }
+    .footer-div a {
+        font-size: 13px; 
+    }
+}
+
 
 
 /* traffic challan form */
@@ -362,9 +364,9 @@ hr{
 /* view challan page */
 
 .challan-div{
-    width: 98%;
-    max-width: 600px;
-    margin: 30px auto;
+    width: 100%;
+    /* max-width: 700px; */
+    margin: 30px auto 100px auto;
     text-align: center;
 }
 
@@ -389,6 +391,7 @@ table{
 }
 
 .up-btn ,.del-btn{
+    font-size: 20px;
     border-style: none;
     padding: 8px;
 }
@@ -405,6 +408,41 @@ table{
 
 .up-btn:hover, .del-btn:hover{
     background-color: #c7e0c8;
+}
+
+
+@media screen and (max-width: 625px){
+    .table-title, .challan-list{
+        font-size: 15px;  
+    }
+    .table-title th{
+        padding: 3px;
+    }
+    .up-btn ,.del-btn{
+        padding: 8px 3px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /* for header */
+    .header{
+        padding: 8px 0px;
+    }
+    .navigation-ul{
+        margin: 10px 0px;
+    }
+    .navigation-ul a, .logout{
+        font-size: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .navigation-ul li{
+        margin: 1px;
+    }
+    /* for view challan */
+    .table-title, .challan-list, .up-btn ,.del-btn{
+        font-size: 12px;  
+    }
 }
 
 

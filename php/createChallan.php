@@ -19,6 +19,17 @@
 <!-- form for creating challan action on challan.php -->
     <form class="challan-form" action="challan.php" method="post">
         <h1 class="form-title challan-title">Create Challan</h1>
+        <?php 
+            if (isset($_GET['error'])){
+                if($_GET['error'] == "inavlidlicensetype"){
+                    echo '<p style="color:red;">License number should be integer</p>';
+                }
+                else if($_GET['error'] == "inavlidfine"){
+                    echo '<p style="color:red;">Fine amount should be integer</p>';
+                }
+            }
+        
+        ?>
 
         <div class="challan-field">              
             <p class="challan-field-name">Rider Name</p>

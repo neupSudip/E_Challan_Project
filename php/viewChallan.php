@@ -19,15 +19,15 @@
         <tr class="table-title">
             <th>Rider Name</th>
             <th>Vehicle No.</th>
+            <th>license No.</th>
+            <th >Location</th>
             <th>Created By</th>
             <th>Law</th>
-            <th>Update</th>
-            <th>Delete</th>
+            <th>Actions</th>
         </tr>
 
         <?php
             include 'database.php';
-
             $sql = "SELECT * from challan";
             $stmt = mysqli_query($conn, $sql);
             
@@ -38,6 +38,8 @@
         <tr class="challan-list">
             <th><?php echo $result['rider'] ?></th>
             <th><?php echo $result['vehicle_num'] ?></th>
+            <th><?php echo $result['license_num'] ?></th>
+            <th ><?php echo $result['place'] ?></th>
             <th><?php echo $result['creater'] ?></th>
             <th><?php echo $result['law'] ?></th>
             <th>
@@ -46,8 +48,6 @@
                         Update
                     </a>
                 </button>
-            </th>
-            <th>
                 <button type="submit" class="del-btn">
                     <a href="../php/delete.php?id=<?php echo $result['id'] ?>" class="del">
                         Delete

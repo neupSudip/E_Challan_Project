@@ -18,9 +18,18 @@ if(isset($_POST['challan-submit'])) {
     $stmt = $conn->prepare("INSERT INTO challan (rider, place, license_num, vehicle_num, vehicle_type, creater, law, fine)
     VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
 
-    // passing values as a parameter
-    $stmt->bind_param("ssiisssi", $rider, $location, $license, $vehicle, $type, $creater, $law, $fine);
-    $stmt->execute();
-    $stmt->close();
-    header("Location: ../php/createChallan.php");
+    if(!preg_match("/^[0-9]*$/", $license)){
+        header("Location: ../php/createChallan.php?error=inavlidlicensetype");
+    }
+    else if(!preg_match("/^[0-9]*$/", $fine)){
+        header("Location: ../php/createChallan.php?error=inavlidfine");
+    }
+    else{
+        // passing values as a parameter
+        $stmt->bind_param("ssissssi", $rider, $location, $license, $vehicle, $type, $creater, $law, $fine);
+        $stmt->execute();
+        $stmt->close();
+        header("Location: ../php/createChallan.php");
+    } 
+    
 }
