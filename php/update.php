@@ -25,7 +25,7 @@ if(isset($_POST['challan-submit'])){
     }
     else{
         // passing values as a parameter
-        $stmt->bind_param("ississsii",$id, $rider, $location, $license, $vehicle, $type, $creater, $law, $fine, $id);
+        $stmt->bind_param("ississssii",$id, $rider, $location, $license, $vehicle, $type, $creater, $law, $fine, $id);
         $stmt->execute();
         $stmt->close();
         header("Location: ../php/viewChallan.php");
